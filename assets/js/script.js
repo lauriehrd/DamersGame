@@ -94,7 +94,7 @@ var navBarNone = function(){
       return;
     }
 
-    axios.post('http://51.15.213.4:5000/api/register/', {
+    axios.post('http://51.15.213.4:5001/api/register/', {
 
     "first_name":nomI.trim(),
     "last_name":pseudoI.trim(),
@@ -105,7 +105,7 @@ var navBarNone = function(){
       console.log(response);
       alert("Inscription faites");
 
-      axios.post('http://51.15.213.4:5000/api/login', {
+      axios.post('http://51.15.213.4:5001/api/login', {
 
       email: mailI.trim(),
       password: mdpI.trim()
@@ -157,7 +157,7 @@ var navBarNone = function(){
     }
 
 
-    axios.post('http://51.15.213.4:5000/api/login', {
+    axios.post('http://51.15.213.4:5001/api/login', {
 
       email: mailC.trim(),
       password: mdpC.trim()
@@ -208,7 +208,7 @@ $('#envoyer_save').click(function(){
 
     }
 
-    axios.post('http://51.15.213.4:5000/api/save/', {
+    axios.post('http://51.15.213.4:5001/api/save/', {
 
     user_id: id,
     data: data
@@ -233,7 +233,7 @@ $('#envoyer_reprendre').click(function(){
 
     }
 
-    axios.post('http://51.15.213.4:5000/api/reprendre/', {
+    axios.post('http://51.15.213.4:5001/api/reprendre/', {
 
     user_id: id,
 
