@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Damers</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
+    </head>
+
+    <body id="body">
+
+        <nav id="nav" class="transparent ">
+            <div id="btnHome">
+                <!-- <i class="fas fa-home fa-2x"></i> -->
+                <img src="./assets/img/house2.png">
+            </div>
+            <h2>Damers</h2>
+    <!--    <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars fa-2x material-icons" id="menuh"></i></a> -->
+        </nav>
+        <section class="profil cacher d-none" id="pro">
+<!--             <img src="" alt="">
+            <p>Choisi ton Avatar</p>
+
+            <form method="post">
+                <input class="input" name="pseudo" type="text" placeholder="Ton pseudo" required="" oninput="setCustomValidity('')">
+                <input class="mdp" name="password" type="password" placeholder="mot de passe" required="required"> 
+                
+                <div>
+                    <input id="submit" class="submit" name="create_profil" type="submit" value="" class="btn">
+                </div>
+            </form> -->
+
+            <section id="inscription">
+                <!-- <i class="fermer" id="fermer_inscription"></i> -->
+                <form>
+                    <fieldset>
+                        <div class="">
+                            <input type='text' placeholder="Ton nom" id="nom_inscription">
+                        </div>
+                        <div class="">
+                            <input type='text' placeholder="Ton pseudo" id="pseudo_inscription">
+                        </div>
+                        <div class="">
+                            <input type='text' placeholder="Ton mail" id="mail_inscription">
+                        </div>
+                        <div class="">
+                            <input type='text' placeholder="Ton mot de passe" type="password" id="mdp_inscription">
+                        </div>
+                        <div class="">
+                            <!-- <input type="submit" value="Valider" id="envoyer"> -->
+                            <button type="button" name="button" id="envoyer_inscription">Valider</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+        <section id="vueProfil" class="vueProfil cacher d-none">
+            <section id="connexion">
+<!--             <i class="fermer" id="fermer_connexion"></i> -->
+                <form>
+                    <fieldset>
+                        <div class="">
+                          <input type='text' placeholder="Ton mail" id="mail_connexion">
+                        </div>
+                        <div class="">
+                          <input type='text' placeholder="Ton mot de passe" type="password" id="mdp_connexion">
+                        </div>
+                        <div class="">
+                          <!-- <input type="submit" value="Valider" id="envoyer"> -->
+                          <button type="button" name="button" id="envoyer_connexion">Connexion</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </section>
+
+        <section id="accueil" class="acc">
+            <hgroup>
+                <h3>Les dames n'ont jamais été aussi <br>fun</h3>
+                <h4>Le jeu de dames ou tu réeinvente ton monde ! <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.tion ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute</h4>
+                <div>
+                    <span class="button--bubble__container">
+                        <button class="num2 button button--bubble" id="btnInscription"> Inscription</button>
+                        <span class="button--bubble__effect-container">
+                            <span class="circle top-left"></span>
+                            <span class="circle top-left"></span>
+                            <span class="circle top-left"></span>
+
+                            <span class="button effect-button"></span>
+
+                            <span class="circle bottom-right"></span>
+                            <span class="circle bottom-right"></span>
+                            <span class="circle bottom-right"></span>
+                        </span>
+                    </span>
+                </div> 
+             </hgroup>
+            <button class="num3" id="btnConnexion"> Connexion</button>
+            <!--  <button disabled="disabled" class="num5"><img src="assets/img/coins.png" alt=""> 367</button> -->
+        </section>
+
+        <ul id="slide-out" class="side-nav">
+            <!-- i class="close" id="close"></i> -->
+            <img src="./assets/img/close1.png" id="close" class="close">
+            <li><a id="envoyer_save" class ="save" style="font-size: 25px; border-color: black; background-color: inherit;" onclick=''><button class="white waves-effect waves-yellow">Sauvegarder la partie</button></a></li>
+            <li><a href="#!" style="font-size: 25px; background-color: inherit;" id="envoyer_reprendre"><button class="white waves-effect waves-yellow">Reprendre la partie</button></a></li>
+            <li><a href="#!" style="font-size: 25px; background-color: inherit;"><button class="white waves-effect waves-yellow">Voir les thèmes</button></a></li>
+            <li><a href="#!" style="font-size: 25px; background-color: inherit;"><button class="white waves-effect waves-yellow num1" id="btnJouer">Nouvelle partie</button></a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="#accueil" style="font-size: 25px; background-color: inherit;"><button id="quitter" class="white waves-effect waves-yellow">Quitter</button></a></li>
+<!--         <a href="#!" class="waves-effect waves-circle waves-light btn-info">
+             <i class="material-icons inf" href="">info</i>
+            </a> -->
+         </ul>
+    
+        <div class="center row cacher d-none" id="jouer">
+            <div id="menuh">
+                <img src="./assets/img/fast-food.png">
+            </div>
+            <div id="board"></div>
+            <div id="status"></div>
+<!--       <div class="themes" id="themes">
+                <img src="img/">
+                <img src="img/">
+                <img src="img/">
+            </div> -->
+            <div class="info">
+                <h2 class="white-text">Règle du jeu</h2>
+                <p class="white-text">Un pion se déplace uniquement vers l’avant, en diagonale et d’une rangée à l’autre. Si bien que les pions seront durant toute la partie du jeu sur les cases foncées.</p>
+                <p class="white-text">
+                Pour prendre un pion à son adversaire, le pion du joueur A doit passer par dessus le pion du joueur B seulement si celui-ci est diagonalement collé en sachant qu’il est obligatoire que la case derrière soit libre. Si c’est le cas, le joueur A enlève du damier le pion adverse.
+                Bien qu’il soit impossible de reculer au jeu de dames, cela se fait lors d’une attaque mais bien évidemment toujours en diagonale et avec une case libre derrière.</p>
+                <p class="white-text">Le joueur déclaré gagnant est celui qui a réussi à prendre tous les pions de son adversaire.</p>
+            </div>
+        </div>
+
+   
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+
+        <script src="./assets/js/game.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,712 @@
+#status{
+
+  position: absolute;
+  bottom: 0;
+}
+
+.white{
+
+  border-radius: 40px;
+  width: 70%;
+}
+
+
+.save {
+  cursor: pointer; }
+
+h2 {
+  text-align: center;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-family: "Luckiest Guy", cursive;
+  line-height: 70px;
+  letter-spacing: 2px; }
+
+  h3,h4{
+
+  text-align: left;
+}
+ h3{
+
+  font-size: 25px;
+  color: white;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+  margin-left: 5rem;
+  /*font-family: 'Luckiest Guy', cursive;*/
+  font-family: 'Dosis', sans-serif;
+/*  text-shadow: -1px 6px 4px black;*/
+
+ }
+
+ h4{
+
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 2px;
+  color: #BDE1F2;
+  font-weight: lighter;
+  margin-left: 5rem;
+  width: 500px;
+  line-height: 20px;
+ }
+
+.button {
+  
+
+  background-color: #9ed897;
+  height: 65px;
+  width: 15vw;
+  border: none;
+  border-radius: 15px;
+  font-family: "Luckiest Guy", cursive;
+  display: inline-block;
+  outline: none;
+  font-size: 23px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  letter-spacing: 1px;
+  color: white;
+  padding: 10px;
+  transition: all 0.1s ease-out;
+  }
+
+.button:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.button--bubble {
+  position: relative;
+  z-index: 2;
+  color: white;
+  background: none;
+}
+
+
+.button--bubble:hover + .button--bubble__effect-container .circle {
+  background: #9be2e1;
+}
+.button--bubble:hover + .button--bubble__effect-container .button {
+  background: #9be2e1;
+}
+.button--bubble:active + .button--bubble__effect-container {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+.button--bubble__container {
+  position: relative;
+  display: inline-block;
+
+
+}
+.button--bubble__container .effect-button {
+  position: absolute;
+  width: 50%;
+  height: 25%;
+  top: 50%;
+  left: 25%;
+  z-index: 1;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  transition: background 0.1s ease-out;
+}
+
+.button--bubble__effect-container {
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 400%;
+  top: -150%;
+  left: -50%;
+  transition: all 0.1s ease-out;
+  pointer-events: none;
+}
+.button--bubble__effect-container .circle {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  transition: background 0.1s ease-out;
+}
+.button--bubble__effect-container .circle.top-left {
+  top: 40%;
+  left: 27%;
+}
+.button--bubble__effect-container .circle.bottom-right {
+  bottom: 40%;
+  right: 27%;
+}
+
+.button--bubble__container {
+  left: 20px;
+  bottom: 20px;
+  position: absolute; 
+}
+
+@-webkit-keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+.fa-users, .fa-cogs, .fa-bomb, .fa-database {
+  margin-right: 10px; }
+
+.acc {
+  height: 100vh;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  width: auto;
+  background-position: center center; }
+
+/*.acc .num1, .num2, .num3, .num4 {
+  border-radius: 15px;
+  padding: 10px;
+  height: 65px;
+  width: 30vw;
+  margin-bottom: 1rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 23px;
+  outline: none; }*/
+
+/*.num1 {
+  background-color: #00d7f7;
+  border: 1px solid #00d7f7;
+  border-radius: 15px;
+  padding: 10px;
+  height: 65px;
+  width: 30vw;
+  color: white;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 23px;
+  outline: none;
+  float: left;
+   }*/
+
+
+.num3 {
+  background-color: #5b79f7;
+  border: 1px solid #5b79f7; 
+  border-radius: 15px;
+  padding: 10px;
+  height: 65px;
+  width: 15vw;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 23px;
+  outline: none;
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+.num3:hover{
+
+  background-color: white;
+  color: #5b79f7;
+  border-color: white;
+}
+
+.num4 {
+  background-color: #f7be00;
+  border: 1px solid #f7be00; }
+
+hgroup{
+
+  padding-top: 13rem;
+}
+
+/*.num5 {
+  width: 110px;
+  height: 40px;
+  background-color: #5b79f7;
+  border: 1px solid #5b79f7;
+  border-radius: 15px;
+  position: relative;
+  top: 5rem;
+  left: 12rem;
+  color: white;
+  font-family: "Luckiest Guy", cursive; }*/
+/*
+.acc .num5 img {
+  margin-right: 1rem; }*/
+
+#nav {
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: absolute;
+z-index:999;
+-webkit-box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0), 0 0 0 0 rgba(0,0,0,0);
+}
+
+
+.close{
+
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.close:before, .close:after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  display: block;
+  height: 10px;
+  width: 45px;
+  background-color: #fff;
+  transition: all 0.25s ease-out; }
+
+.close:after {
+  transform: rotate(-135deg); }
+
+.close:hover:before, .close:hover:after {
+  transform: rotate(0deg); }
+
+nav a .info {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  font-size: 3rem;
+  cursor: pointer; }
+
+nav a .chevron {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  font-size: 3rem; }
+
+.side-nav {
+  background-color: #95e2ec;
+  font-family: "Luckiest Guy", cursive;
+  width: 50vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 9rem; }
+
+/*ulnultton {
+  background-color: white;
+  border-radius: 60px;
+  border-color: black;
+  padding: 10px;
+  height: 65px;
+  width: 73vw; }
+*/
+ul li {
+  margin-bottom: 3rem;
+  background-color: inherit; }
+
+.slide-out a:hover {
+  text-decoration: none;
+  background: white; }
+
+ul li:hover {
+  background-color: inherit;
+  text-decoration: none; }
+
+h1 {
+  cursor: default; }
+
+#board {
+  border: 1px solid red;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+   }
+
+.row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 0px; }
+
+.square {
+  display: flex;
+  justify-content: center;
+  width: 73px;
+  height: 73px;
+  border: 0px solid #ce908e; }
+
+.red2 {
+  background: white; }
+
+.black2 {
+  background: #ce908e; }
+
+.red2.piece {
+  background: #3f749e; }
+
+.black2.piece {
+  background: #424451; }
+
+.piece {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-top: 12px;
+  border: 0px solid inherit; }
+
+.center {
+  justify-content: center; }
+
+.piece {
+  line-height: 50px;
+  text-align: center;
+  color: white; }
+
+.piece.active.black2 {
+  background: #e79268 !important; }
+
+.piece.active.black2:hover, .piece.active.red:hover {
+  cursor: pointer; }
+
+.piece.active.red2 {
+  background: #eeb294 !important; }
+
+.piece.active_group:hover {
+  cursor: pointer; }
+
+.info {
+  height: 100vh;
+  background-color: #5387FA;
+  width: 100vw;
+  display: none; }
+
+.info h2 {
+  text-align: center;
+  font-size: 35px; }
+
+.inf {
+  color: white;
+  font-size: 30px; }
+
+.profil {
+  background-image: url("");
+  height: 100vh; 
+  background-color: #95e2ec;
+}
+
+table {
+  margin: 0 auto; }
+
+p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Luckiest Guy', cursive; }
+
+::placeholder {
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+  color: lightgrey; 
+background-color: white;}
+
+a {
+  text-decoration: none;
+  color: black; }
+
+option {
+  text-align: center; }
+
+input {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 7px;
+  width: 20%;
+  font-family: 'Luckiest Guy', cursive;
+  padding: 12px 20px;
+  letter-spacing: 1px;}
+
+
+.submit{
+
+  height: 55px;
+  width: 55px; 
+  background-color: #51a563;
+  border-radius: 50%;
+  border: 1px solid #51a563;
+  color: white;
+  margin-top: 5rem;
+}
+
+input .mdp {
+
+  margin: 0 auto;
+}
+
+input[type=text]:not(.browser-default) {
+
+  width: 20%;
+  border-radius: 40px;
+  outline: none;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-color: white; 
+  display: block;
+  -webkit-box-shadow: 0 0 0 30px white inset;
+
+}
+
+input[type=password]:not(.browser-default) {
+
+  width: 25%;
+  border-radius: 40px;
+  outline: none;
+  margin: 0 auto;
+  background-color: white; 
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+form {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  color: gray;
+  height: 100vh; 
+}
+
+fieldset{
+
+    border: none;
+
+  }
+
+label{
+
+  background-color: white;
+}
+
+.vueProfil {
+  height: 100%;
+  background-image: url(""); 
+  background-color: #95e2ec;
+  }
+
+
+@media screen and (min-width: 640px) and (max-width: 920px) {
+
+
+#status{
+
+  position: absolute;
+  bottom: 0;
+
+}
+
+  .num2 {
+  background-color: #AAD69D;
+  border: 1px solid #AAD69D;
+  border-radius: 15px;
+  padding: 10px;
+  height: 65px;
+  width: 150px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 18px;
+  outline: none;
+  left: 20px;
+  bottom: 20px;
+  position: absolute;
+ }
+
+.num3 {
+  background-color: #5b79f7;
+  border: 1px solid #5b79f7; 
+  border-radius: 15px;
+  padding: 10px;
+  height: 65px;
+   width: 150px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 18px;
+  outline: none;
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+
+  #board {
+    border: 1px solid inherit;
+    margin-top: 7rem; }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+
+#status{
+
+  position: absolute;
+  bottom: 0;
+
+}
+
+  .num2 {
+  background-color: #AAD69D;
+  border: 1px solid #AAD69D;
+  border-radius: 15px;
+  padding: 10px;
+  height: 65px;
+  width: 150px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 18px;
+  outline: none;
+  left: 20px;
+  bottom: 20px;
+  position: absolute;
+ }
+
+.num3 {
+  background-color: #5b79f7;
+  border: 1px solid #5b79f7; 
+  border-radius: 15px;
+  padding: 10px;
+  height: 65px;
+   width: 150px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 18px;
+  outline: none;
+  right: 20px;
+  bottom: 20px;
+  position: absolute;
+}
+  h2 {
+    color: white; }
+
+  #board {
+    border: 1px solid inherit;
+    margin-top: 7rem; }
+
+  .square {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ce908e; }
+
+  .piece {
+    width: 47px;
+    height: 47px;
+    border-radius: 100%;
+    border: 0px solid inherit; }
+
+  .red2.piece {
+    background: #3f749e;
+    margin-top: 0px;
+    border: 1px solid inherit; }
+
+  .black2.piece {
+    background: #424451;
+    margin-top: 0px;
+    border: 1px solid inherit; }
+
+  .red2 {
+    background: white; }
+
+  .black2 {
+    background: #ce908e; } }
+
+#menuh {
+  position: absolute;
+  top: 2px;
+  right: 30px; 
+  cursor: pointer;  
+  padding-left: 2rem; 
+  z-index: 999999;
+  color:#826041;
+  }
+
+#btnHome{
+
+  position: absolute;
+  top: 2px;
+  left: 20px; 
+  cursor: pointer;
+  padding-left: 2rem; 
+  color:#826041;
+
+}
+
+#slide-out {
+  transform: translateX(-100vw);
+  transition: transform 0.4s linear;
+  overflow: hidden; }
+
+#slide-out.is-active {
+  transform: translateX(0); }
+
+/*# sourceMappingURL=style.css.map */
+
+.d-none {
+
+  display: none;
+}
+
+/*#nav h2 {
+
+  padding-top: 2rem;
+}*/
+
+.fermer:before, .fermer:after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  right: 2rem;
+  display: block;
+  height: 10px;
+  width: 45px;
+  background-color: #fff;
+  transition: all 0.25s ease-out; }
+
+.fermer:after {
+  transform: rotate(-135deg); }
+
+.fermer:hover:before, .fermer:hover:after {
+  transform: rotate(0deg); }
+
+#inscription, #connexion {
+  padding-top: 2rem;
+}
+
+#pro, #vueProfil {
+  height: 180vh;
+  padding-top: 5rem;
+}
+
