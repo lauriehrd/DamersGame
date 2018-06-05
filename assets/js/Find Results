@@ -1,0 +1,132 @@
+Searching 627 files for "localhost"
+
+/Applications/MAMP/htdocs/Damers/assets/js/script.js:
+   95      }
+   96  
+   97:     axios.post('http://51.15.213.4:5000/api/register/', {
+   98  
+   99      "first_name":nomI.trim(),
+  ...
+  106        alert("Inscription faites");
+  107  
+  108:       axios.post('http://51.15.213.4:5000/api/login', {
+  109  
+  110        email: mailI.trim(),
+  ...
+  158  
+  159  
+  160:     axios.post('http://51.15.213.4:5000/api/login', {
+  161  
+  162        email: mailC.trim(),
+  ...
+  209      }
+  210  
+  211:     axios.post('http://51.15.213.4:5000/api/save/', {
+  212  
+  213      user_id: id,
+  ...
+  234      }
+  235  
+  236:     axios.post('http://51.15.213.4:5000/api/reprendre/', {
+  237  
+  238      user_id: id,
+
+/Applications/MAMP/htdocs/Damers/assets/src/connection.js:
+    3  var connection = mysql.createConnection({
+    4    socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock',
+    5:   host      : '51.15.213.4',
+    6    user      : 'root',
+    7    password  : 'laurie',
+
+/Applications/MAMP/htdocs/Damers/node_modules/accepts/README.md:
+  125  You can test this out with the cURL program:
+  126  ```sh
+  127: curl -I -H'Accept: text/html' http://localhost:3000/
+  128  ```
+  129  
+
+/Applications/MAMP/htdocs/Damers/node_modules/encodeurl/README.md:
+   79  
+   80    // set new host for redirect
+   81:   href.host = 'localhost'
+   82    href.protocol = 'https:'
+   83    href.slashes = true
+
+/Applications/MAMP/htdocs/Damers/node_modules/express/lib/response.js:
+  705   * Example:
+  706   *
+  707:  *    res.append('Link', ['<http://localhost/>', '<http://localhost:3000/>']);
+  708   *    res.append('Set-Cookie', 'foo=bar; Path=/; HttpOnly');
+  709   *    res.append('Warning', '199 Miscellaneous warning');
+
+/Applications/MAMP/htdocs/Damers/node_modules/mysql/Changes.md:
+  430  var mysql      = require('mysql');
+  431  var connection = mysql.createConnection({
+  432:   host     : 'localhost',
+  433    user     : 'me',
+  434    password : 'secret',
+
+/Applications/MAMP/htdocs/Damers/node_modules/mysql/Readme.md:
+   81  var mysql      = require('mysql');
+   82  var connection = mysql.createConnection({
+   83:   host     : 'localhost',
+   84    user     : 'me',
+   85    password : 'secret',
+   ..
+  183  
+  184  * `host`: The hostname of the database you are connecting to. (Default:
+  185:   `localhost`)
+  186  * `port`: The port number to connect to. (Default: `3306`)
+  187  * `localAddress`: The source IP address to use for TCP connection. (Optional)
+  ...
+  254  ```js
+  255  var connection = mysql.createConnection({
+  256:   host : 'localhost',
+  257    ssl  : {
+  258      ca : fs.readFileSync(__dirname + '/mysql-ca.crt')
+  ...
+  266  ```js
+  267  var connection = mysql.createConnection({
+  268:   host : 'localhost',
+  269    ssl  : {
+  270      // DO NOT DO THIS
+  ...
+ 1345  
+ 1346  ```js
+ 1347: var connection = mysql.createConnection("mysql://localhost/test?flags=-FOUND_ROWS");
+ 1348  ```
+ 1349  
+ ....
+ 1455  `npm test`.
+ 1456  
+ 1457: For example, if you have an installation of mysql running on localhost:3306
+ 1458  and no password set for the `root` user, run:
+ 1459  
+ 1460  ```sh
+ 1461  $ mysql -u root -e "CREATE DATABASE IF NOT EXISTS node_mysql_test"
+ 1462: $ MYSQL_HOST=localhost MYSQL_PORT=3306 MYSQL_DATABASE=node_mysql_test MYSQL_USER=root MYSQL_PASSWORD= FILTER=integration npm test
+ 1463  ```
+ 1464  
+
+/Applications/MAMP/htdocs/Damers/node_modules/mysql/lib/ConnectionConfig.js:
+   10    }
+   11  
+   12:   this.host               = options.host || 'localhost';
+   13    this.port               = options.port || 3306;
+   14    this.localAddress       = options.localAddress;
+
+/Applications/MAMP/htdocs/Damers/node_modules/parseurl/README.md:
+   60  > node benchmark/fullurl.js
+   61  
+   62:   Parsing URL "http://localhost:8888/foo/bar?user=tj&pet=fluffy"
+   63  
+   64    3 tests completed.
+
+/Applications/MAMP/htdocs/Damers/node_modules/proxy-addr/README.md:
+  121  
+  122  ```js
+  123: var trust = proxyaddr.compile('localhost')
+  124  var addr = proxyaddr(req, trust)
+  125  ```
+
+21 matches across 10 files
