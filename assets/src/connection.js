@@ -2,7 +2,7 @@ var mysql      = require('mysql');
 
 var connection = mysql.createConnection({
   // socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock',
-  host      : '51.15.213.4:5000',
+  host      : '51.15.213.4',
   user      : 'root',
   password  : 'Audette95i',
   database  : 'damers'
